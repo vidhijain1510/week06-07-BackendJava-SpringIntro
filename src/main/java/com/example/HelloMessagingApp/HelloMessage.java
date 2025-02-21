@@ -11,4 +11,8 @@ public class HelloMessage {
         return "Hello from BridgeLabz";
     }
 
+    @GetMapping("/hello/query")
+    public String UC2(@RequestParam String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
 }
