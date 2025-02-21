@@ -16,5 +16,8 @@ public class HelloMessage {
         return "Hello " + name + " from BridgeLabz";
     }
 
-    @GetMapping("")
+    @GetMapping("/param/{name}")
+    public String UC3(@PathVariable String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
 }
