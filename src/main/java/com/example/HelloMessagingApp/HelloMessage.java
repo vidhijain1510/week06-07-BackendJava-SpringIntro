@@ -20,4 +20,9 @@ public class HelloMessage {
     public String UC3(@PathVariable String name) {
         return "Hello " + name + " from BridgeLabz";
     }
+
+    @PostMapping("/post")
+    public String UC4(@RequestBody UserDTO user) {
+        return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    }
 }
